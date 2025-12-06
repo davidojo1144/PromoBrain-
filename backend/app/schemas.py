@@ -1,0 +1,30 @@
+from pydantic import BaseModel
+from typing import Optional, List
+class OverviewMetrics(BaseModel):
+    revenue: float
+    margin: float
+    orders: int
+    top_categories: List[dict]
+class ProposalRequest(BaseModel):
+    objective: str
+    min_margin_pct: float
+class ProposalResponse(BaseModel):
+    name: str
+    description: str
+    target_segment: str
+    discount_pct: float
+    expected_uplift_pct: float
+class ABCreateRequest(BaseModel):
+    campaign_name: str
+    variant_a_pct: float
+    variant_b_pct: float
+    kpi: str
+class ABResultItem(BaseModel):
+    variant: str
+    impressions: int
+    conversions: int
+    revenue: float
+    cost: float
+    margin: float
+class ABResultResponse(BaseModel):
+    items: List[ABResultItem]

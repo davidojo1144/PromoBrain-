@@ -1,0 +1,8 @@
+order_id,user_id,sku,category,price,discount,cost,quantity,channel,ts
+1001,u1,sku-1,Home,100,10,60,1,online,2024-11-01T10:00:00
+1002,u2,sku-2,Beauty,80,0,40,2,online,2024-11-02T12:00:00
+1003,u3,sku-3,Home,120,20,70,1,retail,2024-11-03T09:00:00
+1004,u1,sku-4,Electronics,200,30,140,1,online,2024-11-04T14:00:00
+1005,u4,sku-5,Beauty,60,5,30,3,retail,2024-11-05T16:00:00
+1006,u5,sku-6,Electronics,150,0,100,1,online,2024-11-06T18:00:00
+1007,u2,sku-7,Home,90,10,50,2,online,2024-11-07T20:00:00
